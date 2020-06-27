@@ -2,6 +2,8 @@
 This is a game where you chose your pokemon and battle a random cpu pokemon to the death! Click on an attack buttons to inflict damage to the opposing Pokemon*/
 //Blog Post documentation: https://wjclavellblog.wordpress.com/2020/06/24/final-project-documentation-part-1/
 
+//!two known bugs: 1. if player.choice and computer.choice happen to be the same Pokemon, code will not run correctly. 2. if player loses, game will end but a pop up window does not display 
+
 //play music when page loads
 window.onload = () => {
   const music = document.querySelector("audio");
@@ -51,6 +53,7 @@ function generatePokemon() {
     );
   }
 }
+
 //*assign whatever pokemon is clicked to the player choice
 function playerSelect() {
   $(".pokemon .poke-container").click(function () {
@@ -84,6 +87,7 @@ function playerSelect() {
 //*computer random pokemon selection
 function computerSelect() {
   //choose a random number between 0 and array length (4)
+  
   const randomChoice = Math.floor(Math.random() * pokemonList.length);
   //assign that random number to the index in pokemonList array
   computer.choice = pokemonList[randomChoice];
@@ -115,6 +119,8 @@ function createPoke(location, poke) {
   $(".arena .computer progress").val(computer.choice.health.totalHP);
   $(".arena .player progress").val(player.choice.health.totalHP);
 }
+
+//*control health of each Pokemon
 //reduce computer health by player attack damage
 function setCHealth() {
   computer.choice.health.currentHP -= player.choice.damage;
@@ -176,6 +182,7 @@ function playerAttack() {
         `${computer.choice.name} used ${cAttack.choice} and did ${computer.choice.damage} damage to ${player.choice.name}!`
       );
     }, 400);
+
     //*conditionals to stop the loop and either continue game or stop the game
     //if both pokemon have health remaing break the loop and wait for next player attack
     if (
@@ -221,7 +228,7 @@ function playGame() {
 }
 
 //?How do I restart this game...
-//restart the game by refreshing page, not the best method but hey, it works
+//restart the game by reloading the page, not the best method but hey, it works 🤷🏽‍♂️
 function restart() {
   location.reload();
 }
