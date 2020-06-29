@@ -2,7 +2,7 @@
 This is a game where you chose your pokemon and battle a random cpu pokemon to the death! Click on an attack buttons to inflict damage to the opposing Pokemon*/
 //Blog Post documentation: https://wjclavellblog.wordpress.com/2020/06/24/final-project-documentation-part-1/
 
-//!two known bugs: 1. if player.choice and computer.choice happen to be the same Pokemon, code will not run correctly. 2. if player loses, game will end but a pop up window does not display 
+//!two known bugs: 1. if player.choice and computer.choice happen to be the same Pokemon, code will not run correctly. 2. if player loses, game will end but a pop up window does not display
 
 //play music when page loads
 window.onload = () => {
@@ -87,7 +87,7 @@ function playerSelect() {
 //*computer random pokemon selection
 function computerSelect() {
   //choose a random number between 0 and array length (4)
-  
+
   const randomChoice = Math.floor(Math.random() * pokemonList.length);
   //assign that random number to the index in pokemonList array
   computer.choice = pokemonList[randomChoice];
@@ -148,6 +148,8 @@ function attackList() {
     );
   }
 }
+
+//?How do I animate these guys
 // //animate Pokemon when attacking
 // function animation() {
 //   $('.arena .player img').animate(

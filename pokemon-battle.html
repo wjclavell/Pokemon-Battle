@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Pokemon Battle</title>
   </head>
   <body>
@@ -21,6 +22,7 @@
         src="https://pluspng.com/img-png/pokemon-logo-png-pokemon-logo-png-2000.png"
       />
     </div>
+
     <button onClick="playGame()" id="start">START GAME</button>
 
     <section class="pokemon"></section>
@@ -37,6 +39,7 @@
         <button onclick="restart()" class="restart">TRY AGAIN</button>
       </div>
     </section>
+
     <section class="arena">
       <div class="computer"></div>
       <div class="player"></div>
@@ -46,7 +49,6 @@
 
     <audio src="assets/115-battle (vs trainer).mp3" loop></audio>
 
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="constructor.js"></script>
     <script src="app.js"></script>
   </body>
