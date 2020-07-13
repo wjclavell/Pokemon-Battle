@@ -4,12 +4,6 @@ This is a game where you chose your pokemon and battle a random cpu pokemon to t
 
 //!two known bugs: 1. if player.choice and computer.choice happen to be the same Pokemon, code will not run correctly. 2. if player loses, game will end but a pop up window does not display
 
-//play music when page loads
-window.onload = () => {
-  const music = document.querySelector("audio");
-  music.play();
-};
-
 //current pokemon choice
 const player = {
   choice: null,
@@ -223,6 +217,10 @@ function computerAttack() {
 
 //*function to play the actual game after pressing start button, first generate the selection screen, choose a pokemon, computer randomly chooses as well,then enter battle phase with turn based attacks until one pokemon has no more health
 function playGame() {
+  //play music whenyou start the game
+  const music = document.querySelector("audio");
+  music.play();
+
   document.getElementById("start").style.display = "none";
   generatePokemon();
   playerSelect();
