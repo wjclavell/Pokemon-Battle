@@ -34,9 +34,12 @@ let pokemonList = [
   {
     name: "Pikachu",
     image: {
-      main: "assets/pikachu_main.png",
-      front: "assets/pikachu_front.gif",
-      back: "assets/pikachu_back.gif",
+      main:
+        "https://res.cloudinary.com/wjclavell/image/upload/v1594657519/pokemon-images/pikachu_main_vfn75n.png",
+      front:
+        "https://res.cloudinary.com/wjclavell/image/upload/v1594657446/pokemon-images/pikachu_front_jwxzal.gif",
+      back:
+        "https://res.cloudinary.com/wjclavell/image/upload/v1594657446/pokemon-images/pikachu_back_qnmbpq.gif",
     },
     type: "Electric",
     attacks: ["Quick Attack", "Thunderbolt", "Thunder", "Shock Wave"],
@@ -49,9 +52,12 @@ let pokemonList = [
   {
     name: "Charmander",
     image: {
-      main: "assets/charmander_main.png",
-      front: "assets/charmander_front.gif",
-      back: "assets/charmander_back.gif",
+      main:
+        "https://res.cloudinary.com/wjclavell/image/upload/v1594657530/pokemon-images/charmander_main_worsmx.png",
+      front:
+        "https://res.cloudinary.com/wjclavell/image/upload/v1594657447/pokemon-images/charmander_front_ltgyaz.gif",
+      back:
+        "https://res.cloudinary.com/wjclavell/image/upload/v1594657448/pokemon-images/charmander_back_kjocpk.gif",
     },
     type: "Fire",
     attacks: ["Ember", "Flamethrower", "Fire Spin", "Fire Blast"],
@@ -64,9 +70,12 @@ let pokemonList = [
   {
     name: "Bulbasaur",
     image: {
-      main: "assets/bulbasaur_main.png",
-      front: "assets/bulbasaur_front.gif",
-      back: "assets/bulbasaur_back.gif",
+      main:
+        "https://res.cloudinary.com/wjclavell/image/upload/v1594657446/pokemon-images/bulbasaur_main_oso4q4.png",
+      front:
+        "https://res.cloudinary.com/wjclavell/image/upload/v1594657446/pokemon-images/bulbasaur_front_wgblls.gif",
+      back:
+        "https://res.cloudinary.com/wjclavell/image/upload/v1594657446/pokemon-images/bulbasaur_back_udz4dv.gif",
     },
     type: "Grass/Poison",
     attacks: ["Vine Whip", "Razor Leaf", "Solar Beam", "Leaf Blade"],
@@ -79,9 +88,12 @@ let pokemonList = [
   {
     name: "Squirtle",
     image: {
-      main: "assets/squirtle_main.png",
-      front: "assets/squirtle_front.gif",
-      back: "assets/squirtle_back.gif",
+      main:
+        "https://res.cloudinary.com/wjclavell/image/upload/v1594657445/pokemon-images/squirtle_main_okx3at.png",
+      front:
+        "https://res.cloudinary.com/wjclavell/image/upload/v1594657447/pokemon-images/squirtle_front_thmsjd.gif",
+      back:
+        "https://res.cloudinary.com/wjclavell/image/upload/v1594657446/pokemon-images/squirtle_back_evrmdo.gif",
     },
     type: "Water",
     attacks: ["Water Gun", "Aqua Tail", "Hydro Pump", "Bubble Beam"],
